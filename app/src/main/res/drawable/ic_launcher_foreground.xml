@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- camera body -->
+    <path android:fillColor="#F2E8CF" android:pathData="M30,40 h48 a6,6 0 0 1 6,6 v26 a6,6 0 0 1 -6,6 h-48 a6,6 0 0 1 -6,-6 v-26 a6,6 0 0 1 6,-6 z" />
+    <path android:fillColor="#C0392B" android:pathData="M24,46 a6,6 0 0 1 6,-6 h48 a6,6 0 0 1 6,6 v4 h-60 z" />
+    <path android:fillColor="#2A2724" android:pathData="M64,34 h10 v6 h-10 z" />
+    <!-- lens -->
+    <path android:fillColor="#1A1816" android:pathData="M54,59 m-13,0 a13,13 0 1 0 26,0 a13,13 0 1 0 -26,0" />
+    <path android:fillColor="#3E5B7A" android:pathData="M54,59 m-8,0 a8,8 0 1 0 16,0 a8,8 0 1 0 -16,0" />
+    <path android:fillColor="#FFB347" android:pathData="M50,55 m-2.5,0 a2.5,2.5 0 1 0 5,0 a2.5,2.5 0 1 0 -5,0" />
+    <!-- flash -->
+    <path android:fillColor="#FFB347" android:pathData="M32,44 h8 v3 h-8 z" />
+</vector>

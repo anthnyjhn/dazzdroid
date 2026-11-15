@@ -1,0 +1,195 @@
+{
+  "cameras": [
+    {"id": "original", "name": "Original", "category": "Digital", "color": "#3A3F44", "aspect": "3:4", "frame": "none", "special": "none", "video": true,
+     "desc": "Clean, unfiltered capture. Pair with RAW (DNG) in settings for a digital negative.",
+     "variants": [
+       {"name": "STD", "spec": {}},
+       {"name": "LO-DR", "spec": {"contrast": 0.86, "black": [0.035, 0.035, 0.035], "white": [0.95, 0.95, 0.95], "saturation": 0.9, "sharpen": 0.25}}
+     ]},
+
+    {"id": "fxnr", "name": "FXN R", "category": "35mm", "color": "#2E7D5B", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Everyday Fujicolor 35mm. Warm street tones, soft grain, balanced shadows.",
+     "variants": [{"name": "C200", "spec": {
+       "temp": 0.15, "contrast": 1.05, "saturation": 1.08, "gamma": [1.0, 1.02, 0.98],
+       "shadowTint": [-0.012, 0.016, 0.022], "highTint": [0.03, 0.015, -0.02],
+       "black": [0.03, 0.032, 0.036], "white": [0.98, 0.97, 0.93],
+       "grain": 0.35, "grainSize": 1.6, "vignette": 0.25, "halation": 0.15}}]},
+
+    {"id": "cpm35", "name": "CPM35", "category": "35mm", "color": "#D88C9A", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Early compact point-and-shoot. Dreamy pastels, rose-peach highlights, cool green-cyan shadows.",
+     "variants": [{"name": "STD", "spec": {
+       "exposure": 0.15, "temp": 0.08, "contrast": 0.9, "saturation": 0.92,
+       "black": [0.06, 0.07, 0.072], "highTint": [0.05, 0.015, 0.0], "shadowTint": [-0.02, 0.02, 0.03],
+       "soft": 0.2, "bloom": 0.25, "halation": 0.2, "grain": 0.3, "vignette": 0.3}}]},
+
+    {"id": "dclassic", "name": "D Classic", "category": "35mm", "color": "#B5835A", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Late-80s rangefinder. Neutral-to-amber tones, lifted blacks, subtle grain.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.12, "contrast": 0.95, "saturation": 0.9,
+       "black": [0.075, 0.065, 0.05], "highTint": [0.03, 0.02, -0.012],
+       "grain": 0.22, "vignette": 0.2}}]},
+
+    {"id": "ct2f", "name": "CT2F", "category": "35mm", "color": "#C9A27E", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Premium titanium compact. Paparazzi flash look, washed-out contrast, pink-leaning highlights.",
+     "variants": [{"name": "STD", "spec": {
+       "exposure": 0.2, "contrast": 0.85, "saturation": 0.95,
+       "black": [0.05, 0.04, 0.05], "white": [1.0, 0.95, 0.96], "highTint": [0.04, 0.0, 0.022],
+       "bloom": 0.2, "flash": 0.3, "grain": 0.3, "vignette": 0.15}}]},
+
+    {"id": "grf", "name": "GR F", "category": "35mm", "color": "#2B2B2B", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Pocket street compact with moderate vignetting and three film stocks.",
+     "variants": [
+       {"name": "400TX", "spec": {"mono": 1, "monoMix": [0.3, 0.59, 0.11], "contrast": 1.22, "scurve": 0.3, "black": [0.02, 0.02, 0.02], "grain": 0.6, "grainSize": 1.8, "vignette": 0.35}},
+       {"name": "VELX5", "spec": {"saturation": 1.35, "contrast": 1.18, "scurve": 0.2, "gamma": [1.0, 0.97, 1.04],
+         "mix": [1.06, -0.04, -0.02, 0.0, 1.0, 0.0, -0.02, -0.03, 1.05],
+         "shadowTint": [0.025, -0.02, 0.045], "highTint": [0.02, 0.0, -0.012], "grain": 0.25, "vignette": 0.35}},
+       {"name": "100ACR", "spec": {"mono": 1, "monoMix": [0.25, 0.62, 0.13], "contrast": 1.0, "black": [0.05, 0.05, 0.05], "white": [0.96, 0.96, 0.96], "grain": 0.18, "grainSize": 1.2, "vignette": 0.3}}
+     ]},
+
+    {"id": "135sr", "name": "135 SR", "category": "35mm", "color": "#8E6F4E", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Standard 35mm SLR film. Muted warm tones and balanced contrast for portraits and travel.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.12, "contrast": 1.0, "saturation": 0.85, "black": [0.035, 0.03, 0.028],
+       "highTint": [0.025, 0.012, -0.015], "grain": 0.25, "vignette": 0.2}}]},
+
+    {"id": "nt16", "name": "NT16", "category": "35mm", "color": "#1F3B57", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Natural-light compact. Clean daylight tones, or tungsten-balanced night shots with deep blue shadows.",
+     "variants": [
+       {"name": "DAY", "spec": {"saturation": 1.05, "contrast": 1.05, "temp": 0.03, "black": [0.02, 0.02, 0.022], "grain": 0.2, "vignette": 0.15}},
+       {"name": "NIGHT", "spec": {"temp": -0.38, "contrast": 1.1, "saturation": 1.05, "shadowTint": [-0.02, 0.0, 0.065], "black": [0.01, 0.015, 0.04], "halation": 0.35, "grain": 0.35, "vignette": 0.25}}
+     ]},
+
+    {"id": "classicu", "name": "Classic U", "category": "35mm", "color": "#6B7F3A", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Expired film through a classic SLR. Green-leaning shadows, orangey reds, coarse grain.",
+     "variants": [{"name": "STD", "spec": {
+       "mix": [1.0, 0.0, 0.0, 0.1, 0.9, 0.0, 0.0, 0.0, 1.0],
+       "shadowTint": [-0.012, 0.045, 0.0], "highTint": [0.04, 0.022, -0.03],
+       "black": [0.06, 0.085, 0.05], "contrast": 0.95, "saturation": 0.85,
+       "grain": 0.7, "grainSize": 2.2, "vignette": 0.3}}]},
+
+    {"id": "dfuns", "name": "D FunS", "category": "Disposable", "color": "#E5B700", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Yellow-box disposable. Warm playful colors, soft plastic lens, edge vignetting.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.22, "saturation": 1.15, "contrast": 1.1, "soft": 0.25, "vignette": 0.55, "vignetteSoft": 0.5,
+       "grain": 0.4, "highTint": [0.03, 0.02, -0.02], "ca": 0.35, "bloom": 0.15, "black": [0.03, 0.025, 0.02], "flash": 0.15}}]},
+
+    {"id": "dqs", "name": "DQS", "category": "Disposable", "color": "#2F9E6E", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Green-box disposable 400. Pinkish whites, cyan blues, cool greens.",
+     "variants": [{"name": "STD", "spec": {
+       "mix": [1.0, 0.0, 0.0, 0.0, 0.94, 0.08, 0.0, 0.0, 1.0],
+       "highTint": [0.032, -0.006, 0.022], "shadowTint": [-0.02, 0.012, 0.032],
+       "saturation": 1.1, "contrast": 1.05, "vignette": 0.4, "grain": 0.35, "soft": 0.15, "ca": 0.2, "flash": 0.1}}]},
+
+    {"id": "hoga", "name": "Hoga", "category": "Toy", "color": "#4C4C8A", "aspect": "1:1", "frame": "film120", "special": "none",
+     "desc": "Plastic medium-format toy camera. Dreamy low contrast, pastel hues, heavy vignette, light leaks.",
+     "variants": [{"name": "STD", "spec": {
+       "contrast": 0.8, "saturation": 0.85, "black": [0.08, 0.07, 0.09], "soft": 0.4, "vignette": 0.85, "vignetteSoft": 0.6,
+       "leak": 0.6, "leakColor": [1.0, 0.35, 0.1], "ca": 0.5, "grain": 0.4, "bloom": 0.25, "highTint": [0.03, 0.01, 0.03]}}]},
+
+    {"id": "dhalf", "name": "D Half", "category": "Toy", "color": "#C0392B", "aspect": "3:4", "frame": "none", "special": "half",
+     "desc": "Half-frame camera: two vertical shots stitched side-by-side into one 35mm frame.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.12, "saturation": 1.1, "contrast": 1.05, "black": [0.04, 0.035, 0.03],
+       "grain": 0.4, "vignette": 0.3, "halation": 0.15}}]},
+
+    {"id": "golf", "name": "Golf", "category": "Toy", "color": "#1E88E5", "aspect": "1:1", "frame": "none", "special": "multi4",
+     "desc": "Multi-lens sports camera. Fires four lenses in sequence to capture motion in a grid, with faded tones.",
+     "variants": [{"name": "STD", "spec": {
+       "contrast": 0.9, "saturation": 0.85, "black": [0.06, 0.06, 0.055], "temp": 0.1, "grain": 0.4, "vignette": 0.4}}]},
+
+    {"id": "d3d", "name": "D3D", "category": "Toy", "color": "#7E57C2", "aspect": "3:4", "frame": "none", "special": "wiggle",
+     "desc": "Lenticular 3D camera. Captures four angles and loops them as a wiggle video. Sway the phone slightly while it shoots.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.1, "saturation": 1.05, "black": [0.04, 0.035, 0.03], "grain": 0.3, "vignette": 0.25}}]},
+
+    {"id": "ccd", "name": "CCD", "category": "Digital", "color": "#90A4AE", "aspect": "3:4", "frame": "none", "special": "none", "video": true,
+     "desc": "Early-2000s compact digicam. Crisp sharpening, cool balance, punchy flash, low-light sensor noise.",
+     "variants": [
+       {"name": "DAY", "spec": {"sharpen": 0.8, "temp": -0.12, "contrast": 1.12, "saturation": 1.1, "noise": 0.4, "highTint": [-0.01, 0.0, 0.02], "bloom": 0.1, "flash": 0.25}},
+       {"name": "NIGHT", "spec": {"sharpen": 0.7, "temp": -0.18, "contrast": 1.15, "saturation": 1.05, "noise": 1.1, "exposure": 0.05, "bloom": 0.15, "flash": 0.3, "shadowTint": [0.0, 0.0, 0.03]}}
+     ]},
+
+    {"id": "instc", "name": "Inst C", "category": "Instant", "color": "#F2E8CF", "aspect": "1:1", "frame": "instaxsq", "special": "none",
+     "desc": "Square instant film with signature white border and soft contrast.",
+     "variants": [{"name": "STD", "spec": {
+       "exposure": 0.15, "contrast": 0.9, "black": [0.04, 0.045, 0.05], "white": [0.97, 0.97, 0.95],
+       "highTint": [0.0, 0.01, 0.02], "shadowTint": [-0.01, 0.01, 0.03], "soft": 0.1, "bloom": 0.15, "vignette": 0.2, "grain": 0.15}}]},
+
+    {"id": "instm", "name": "Inst M", "category": "Instant", "color": "#F8BBD0", "aspect": "3:4", "frame": "instaxmini", "special": "none",
+     "desc": "Mini instant film. Credit-card sized print, white border, soft punchy color.",
+     "variants": [{"name": "STD", "spec": {
+       "exposure": 0.12, "contrast": 0.95, "saturation": 1.08, "black": [0.035, 0.04, 0.045], "white": [0.98, 0.97, 0.96],
+       "highTint": [0.012, 0.0, 0.02], "soft": 0.1, "bloom": 0.15, "vignette": 0.22, "grain": 0.15, "flash": 0.1}}]},
+
+    {"id": "polan", "name": "Pola N", "category": "Instant", "color": "#E8E1D3", "aspect": "1:1", "frame": "polaroid", "special": "none",
+     "desc": "Vintage integral instant film. Warm faded tones, cyan shadows, classic thick-bottom frame.",
+     "variants": [{"name": "STD", "spec": {
+       "temp": 0.18, "contrast": 0.85, "saturation": 0.85, "black": [0.08, 0.075, 0.065], "white": [0.97, 0.94, 0.86],
+       "shadowTint": [-0.02, 0.02, 0.03], "soft": 0.15, "vignette": 0.4, "grain": 0.15}}]},
+
+    {"id": "s67", "name": "S 67", "category": "Medium", "color": "#5D4037", "aspect": "4:5", "frame": "film120", "special": "none",
+     "desc": "6x7 medium format. Moody, high-character contrast with fine grain.",
+     "variants": [{"name": "STD", "spec": {
+       "contrast": 1.1, "scurve": 0.2, "saturation": 0.95, "temp": 0.06, "shadowTint": [0.0, 0.01, 0.025],
+       "grain": 0.15, "grainSize": 1.0, "vignette": 0.3}}]},
+
+    {"id": "h500c", "name": "H 500C", "category": "Medium", "color": "#9E9E9E", "aspect": "1:1", "frame": "film120", "special": "none",
+     "desc": "Swedish 6x6 square system camera. Rich, creamy portrait film or classic black-and-white.",
+     "variants": [
+       {"name": "COLOR", "spec": {"contrast": 1.05, "temp": 0.1, "highTint": [0.03, 0.015, 0.0], "black": [0.03, 0.03, 0.03], "grain": 0.15, "grainSize": 1.0, "vignette": 0.25}},
+       {"name": "BW", "spec": {"mono": 1, "monoMix": [0.3, 0.6, 0.1], "contrast": 1.12, "scurve": 0.2, "black": [0.03, 0.03, 0.03], "grain": 0.25, "grainSize": 1.2, "vignette": 0.25}}
+     ]},
+
+    {"id": "rz67", "name": "RZ 67", "category": "Medium", "color": "#37474F", "aspect": "4:5", "frame": "film120", "special": "none",
+     "desc": "Studio 6x7 system camera. Cool, contrasty, deep shadows.",
+     "variants": [{"name": "STD", "spec": {
+       "contrast": 1.2, "scurve": 0.25, "saturation": 0.9, "temp": -0.05, "shadowTint": [-0.01, 0.0, 0.03],
+       "grain": 0.15, "grainSize": 1.0, "vignette": 0.3}}]},
+
+    {"id": "ir400", "name": "IR400", "category": "Specialty", "color": "#C2185B", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "False-color infrared film. Foliage glows pink and red, skies go deep.",
+     "variants": [{"name": "STD", "spec": {
+       "mix": [0.3, 1.0, -0.35, 0.7, 0.1, 0.0, 0.0, 0.25, 0.75],
+       "saturation": 1.2, "contrast": 1.1, "grain": 0.4, "vignette": 0.25}}]},
+
+    {"id": "ir100", "name": "IR100", "category": "Specialty", "color": "#FF8A65", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Faded infrared stock. Foliage turns faded orange, shadows turn teal.",
+     "variants": [{"name": "STD", "spec": {
+       "mix": [0.45, 0.7, -0.15, 0.45, 0.45, 0.1, 0.0, 0.3, 0.7],
+       "contrast": 0.9, "saturation": 0.9, "black": [0.05, 0.06, 0.07], "highTint": [0.03, 0.01, -0.02], "shadowTint": [-0.03, 0.02, 0.03],
+       "grain": 0.3, "vignette": 0.2}}]},
+
+    {"id": "dexp", "name": "D Exp", "category": "Specialty", "color": "#AEEA00", "aspect": "2:3", "frame": "film35", "special": "none",
+     "desc": "Cross-processed experiment. Heavy grain, high contrast, bold color shifts.",
+     "variants": [{"name": "STD", "spec": {
+       "gamma": [1.1, 1.15, 0.8], "black": [0.0, 0.0, 0.12], "white": [1.0, 1.0, 0.82],
+       "contrast": 1.35, "scurve": 0.3, "saturation": 1.25, "grain": 0.7, "grainSize": 2.0, "vignette": 0.4}}]},
+
+    {"id": "vhs", "name": "VHS", "category": "Video", "color": "#212121", "aspect": "3:4", "frame": "none", "special": "none", "video": true, "stamp": "vcr",
+     "desc": "80s-90s tape camcorder. Low resolution, scan lines, chroma bleed, washed-out contrast.",
+     "variants": [{"name": "SP", "spec": {
+       "vhs": 1, "lowRes": 280, "scan": 0.5, "ca": 0.8, "saturation": 1.1, "contrast": 0.85,
+       "black": [0.06, 0.06, 0.07], "white": [0.93, 0.93, 0.92], "temp": 0.05, "noise": 0.5, "soft": 0.2}},
+       {"name": "EP", "spec": {
+       "vhs": 1.5, "lowRes": 200, "scan": 0.6, "ca": 1.0, "saturation": 0.95, "contrast": 0.8,
+       "black": [0.08, 0.08, 0.09], "white": [0.9, 0.9, 0.88], "temp": 0.08, "noise": 0.9, "soft": 0.3}}]},
+
+    {"id": "8mm", "name": "8mm", "category": "Video", "color": "#795548", "aspect": "3:4", "frame": "none", "special": "none", "video": true,
+     "desc": "Home-movie reel. Gate weave, dust, scratches, flicker and warm projection color.",
+     "variants": [{"name": "STD", "spec": {
+       "jitter": 1, "dust": 0.8, "flicker": 1, "gate": 1, "grain": 0.8, "grainSize": 2.5, "temp": 0.25, "saturation": 0.85,
+       "contrast": 1.1, "black": [0.05, 0.04, 0.03], "vignette": 0.6, "halation": 0.3, "soft": 0.25}}]},
+
+    {"id": "16mm", "name": "16mm", "category": "Video", "color": "#A1887F", "aspect": "3:4", "frame": "none", "special": "none", "video": true,
+     "desc": "Indie cinema reel. Gentle weave, fine dust and warm cinematic grade.",
+     "variants": [{"name": "STD", "spec": {
+       "jitter": 0.5, "dust": 0.45, "flicker": 0.5, "grain": 0.55, "grainSize": 1.8, "temp": 0.12, "contrast": 1.05,
+       "saturation": 0.9, "vignette": 0.4, "halation": 0.25, "scurve": 0.15, "shadowTint": [-0.01, 0.01, 0.02]}}]},
+
+    {"id": "dv", "name": "DV", "category": "Video", "color": "#455A64", "aspect": "3:4", "frame": "none", "special": "none", "video": true, "stamp": "dv",
+     "desc": "Early-2000s MiniDV camcorder. Over-sharp, cool, slightly noisy digital video.",
+     "variants": [{"name": "STD", "spec": {
+       "sharpen": 0.6, "noise": 0.35, "temp": -0.08, "saturation": 1.1, "contrast": 1.05, "scan": 0.12, "ca": 0.15,
+       "highTint": [-0.01, 0.0, 0.02]}}]}
+  ]
+}
