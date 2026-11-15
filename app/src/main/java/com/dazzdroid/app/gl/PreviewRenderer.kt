@@ -66,12 +66,16 @@ class PreviewRenderer(private val context: Context) : SurfaceTexture.OnFrameAvai
         }
     }
 
-    /** Camera buffer geometry: buffer size, clockwise rotation to upright, and mirroring. */
-    fun setSource(bufW: Int, bufH: Int, rotation: Int, mirror: Boolean) {
-        val swap = rotation % 180 != 0
+    /**
+     * Camera buffer geometry. Camera2 already sets the buffer transform (sensor rotation and
+     * front-camera mirroring) on the SurfaceTexture, so the transform matrix delivers upright
+     * frames; we only need the upright size for center-cropping.
+     */
+    fun setSource(bufW: Int, bufH: Int, sensorRotation: Int) {
+        val swap = sensorRotation % 180 != 0
         uprightW = if (swap) bufH else bufW
         uprightH = if (swap) bufW else bufH
-        orient = Geometry.orient(rotation, mirror)
+        orient = Geometry.orient(0, false)
     }
 
     fun setDisplay(surface: Surface?, w: Int, h: Int) {

@@ -225,8 +225,8 @@ private fun Viewfinder(vm: CameraViewModel) {
             )
         }
 
-        // HUD
-        Row(Modifier.align(Alignment.TopStart).padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
+        // HUD (top-center so it never collides with date stamps in the corners)
+        Row(Modifier.align(Alignment.TopCenter).padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
             Text(
                 vm.camera.name + if (vm.camera.variants.size > 1) " · " + vm.variantSpec.name else "",
                 color = Color.White, fontFamily = FontFamily.Monospace, fontSize = 11.sp,

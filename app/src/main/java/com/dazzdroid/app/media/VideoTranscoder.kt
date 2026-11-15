@@ -78,7 +78,9 @@ object VideoTranscoder {
         decoder.start()
 
         val texMatrix = FloatArray(16)
-        val orient = Geometry.orient(rotation, false)
+        // MediaCodec applies the track's rotation to the output surface transform, so the
+        // SurfaceTexture matrix already yields upright frames.
+        val orient = Geometry.orient(0, false)
         val crop = floatArrayOf(1f, 1f, 0f, 0f)
         val info = MediaCodec.BufferInfo()
         extractor.selectTrack(vTrack)

@@ -165,7 +165,7 @@ class CameraViewModel(app: Application) : AndroidViewModel(app) {
                 openKey = null
                 return@open
             }
-            renderer.setSource(info.previewSize.width, info.previewSize.height, info.sensorOrientation, info.front)
+            renderer.setSource(info.previewSize.width, info.previewSize.height, info.sensorOrientation)
             controller.setExposureCompensation(adj.ev)
             controller.setManual(adj.iso, adj.shutterNs)
             controller.setZoom(zoom)
